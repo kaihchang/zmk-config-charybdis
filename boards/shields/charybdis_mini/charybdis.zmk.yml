@@ -1,0 +1,11 @@
+file_format: "1"
+id: charybdis-nano
+name: charybdis-nano
+type: shield
+url: https://github.com/kaihchang/zmk-config-charybdis
+requires: [nice_nano_v2]
+features:
+  - keys
+siblings:
+  - charybdis_left
+  - charybdis_right

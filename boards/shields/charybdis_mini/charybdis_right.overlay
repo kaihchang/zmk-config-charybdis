@@ -1,0 +1,22 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include "charydbis.dtsi"
+
+&default_transform { // The matrix transform for this board is 5 columns over because the left half is 5 columns wide according to the matrix.
+    col-offset = <5>;
+};
+
+&kscan0 {
+    wakeup-source;
+    col-gpios
+        = <&gpio0 24 GPIO_ACTIVE_HIGH> // Col 5
+        , <&gpio1 0 GPIO_ACTIVE_HIGH> // Col 6
+        , <&gpio0 11 GPIO_ACTIVE_HIGH> // Col 7
+        , <&gpio1 4 GPIO_ACTIVE_HIGH> // Col 8
+        , <&gpio1 6 GPIO_ACTIVE_HIGH>  // Col 9
+        ;
+};

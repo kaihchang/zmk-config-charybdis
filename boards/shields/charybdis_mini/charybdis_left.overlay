@@ -1,0 +1,18 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include "charydbis.dtsi"
+
+&kscan0 {
+    wakeup-source;
+    col-gpios
+        = <&gpio0 24 GPIO_ACTIVE_HIGH> // Col 0
+        , <&gpio1 0 GPIO_ACTIVE_HIGH> // Col 1
+        , <&gpio0 11 GPIO_ACTIVE_HIGH> // Col 2
+        , <&gpio1 4 GPIO_ACTIVE_HIGH> // Col 3
+        , <&gpio1 6 GPIO_ACTIVE_HIGH> // Col 4
+        ;
+};
