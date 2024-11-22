@@ -5,7 +5,7 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "charydbis-layout.dtsi"
+#include "charybdis-layout.dtsi"
 
 &physical_layout0 {
     transform = <&default_transform>;
