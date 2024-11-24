@@ -27,7 +27,7 @@
         compatible = "zmk,input-listener";
         device = <&vtrackball>;
 
-    snipe {
+        snipe {
             layers = <mouse_layer>;
             input-processors = <&xy_scaler 1 3>;
         };
