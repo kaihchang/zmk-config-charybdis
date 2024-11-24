@@ -35,12 +35,12 @@
         device = <&vtrackball>;
 
         snipe {
-            layers = <mouse_layer>;
+            layers = <Mouse>;
             input-processors = <&xy_scaler 1 3>;
         };
 
         scroll {
-            layers = <navi_layer>;
+            layers = <Nav>;
             input-processors = <&xy_invert (INPUT_TRANSFORM_Y_INVERT)>, <&xy_scaler 1 3>, <&x_scaler 0 1>, <&mouse_to_wheel_mapper>;
         };
     };
